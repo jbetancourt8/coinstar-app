@@ -4,11 +4,9 @@ export const WatchListContext = createContext();
 
 export const WatchListContextProvider = (props) => {
   const [watchList, setWatchList] = useState(
-    localStorage.getItem("watchList").split(",") || [
-      "bitcoin",
-      "ethereum",
-      "ripple",
-    ]
+    localStorage.length > 0
+      ? localStorage.getItem("watchList").split(",")
+      : ["bitcoin", "ethereum", "ripple"]
   );
 
   useEffect(() => {

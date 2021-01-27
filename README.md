@@ -10,6 +10,8 @@ Clone the repo and use npm to install dependencies.
 npm install
 ```
 
+Or visit the site here: https://coinstar-app.herokuapp.com/
+
 ## Usage
 
 Click on one of the coins to see more information. Use the "Add" button to choose from a list of cryptocurrencies.
